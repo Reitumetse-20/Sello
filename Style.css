@@ -1,73 +1,235 @@
+/* General Reset and Base Styling */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #f2f2f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
+/* Header Section */
 header {
-  background-color: #4b0082;
+  background-color: #5a4e8c;
   color: white;
-  padding: 20px 0;
+  padding: 40px 20px 20px;
   text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* Navigation Tabs */
+nav {
+  margin-top: 10px;
+  background-color: #443d70;
 }
 
 .nav-tabs {
-  list-style: none;
   display: flex;
   justify-content: center;
-  background-color: #333;
-  margin-top: 10px;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 .nav-tabs li {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .nav-tabs a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
   display: block;
+  padding: 12px 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+  border-radius: 6px;
 }
 
-.nav-tabs a:hover {
-  background-color: #4b0082;
-  border-radius: 5px;
+.nav-tabs a:hover,
+.nav-tabs a:focus {
+  background-color: #7669b2;
 }
 
+/* Main Content */
 main {
-  padding: 30px;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
+/* Sections */
 section {
   margin-bottom: 50px;
 }
 
+section h2 {
+  font-size: 2em;
+  color: #5a4e8c;
+  margin-bottom: 15px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
 .gallery img {
-  width: 200px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Videos */
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .videos iframe {
-  width: 300px;
+  border: none;
+  border-radius: 8px;
+  width: 360px;
   height: 200px;
-  margin: 10px;
-  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Footer */
 footer {
-  background-color: #4b0082;
+  background-color: #5a4e8c;
   color: white;
   text-align: center;
-  padding: 15px 0;
-  position: relative;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 0.9em;
+  }/* General Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* Header Section */
+header {
+  background-color: #5a4e8c;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* Navigation Tabs */
+nav {
+  margin-top: 10px;
+  background-color: #443d70;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-tabs li {
+  margin: 0 10px;
+}
+
+.nav-tabs a {
+  display: block;
+  padding: 12px 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+  border-radius: 6px;
+}
+
+.nav-tabs a:hover,
+.nav-tabs a:focus {
+  background-color: #7669b2;
+}
+
+/* Main Content */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Sections */
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-size: 2em;
+  color: #5a4e8c;
+  margin-bottom: 15px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Videos */
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.videos iframe {
+  border: none;
+  border-radius: 8px;
+  width: 360px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #5a4e8c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 0.9em;
 }
